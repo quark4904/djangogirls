@@ -3,35 +3,16 @@
     <title>Jongmin's blog</title>
   </head>
   <body>
-    <header>
-      <h1><a href="">Jongmin's blog</a></h1>
-    </header>
     <div>
-      <ul>
-        <li>
-          <div>
-            마스크 5부제 6월부터 폐지..식약처 "수급상황 원활"
-          </div>
-          <p>published: 2020.05.29</p>
-          <div>
-            (서울=뉴스1) 이형진 기자 = 식품의약품안전처가 29일 마스크 수급상황이
-            개선됨에 따라 오는 6월1일부터 요일별 구매 5부제를 폐지한다.
-          </div>
-        </li>
-        <br />
-        <li>
-          <div>
-            철원서 휴가 복귀 장병 코로나19 확진.."부대원 휴가 전면 통제"(종합)
-          </div>
-          <p>published: 2020.05.29</p>
-          <div>
-            (철원=연합뉴스) 이재현 기자 = 29일 강원 철원 육군 모 부대 소속
-            장병이 신종 코로나바이러스 감염증(코로나19) 확진 판정을 받았다.
-          </div>
-        </li>
-      </ul>
+      <h1><a href="">Jongmin's blog</a></h1>
     </div>
+    <br />
+    {% for post in posts %}
+    <div>
+      <h2><a href="">{{ post.title }}</a></h2>
+      <p>published: {{ post.published_date }}</p>
+      <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
   </body>
-  <p>Hi there!</p>
-  <p>It works!</p>
 </html>
