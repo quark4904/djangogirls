@@ -1,9 +1,9 @@
 .page-header {
   display: block;
-  background-color: black;
+  color: black;
+  background-color: #fca205;
   margin-top: 0;
-  padding: 20px 20px 20px 40px;
-  color: #fca205;
+  padding: 10px 10px 10px 10px;
 }
 
 h2 a {
@@ -11,6 +11,11 @@ h2 a {
   font-family: "Black Han Sans", sans-serif;
 }
 
-body {
-  padding-left: 15px;
+.content_container {
+  margin-left: 15px;
+}
+
+.detail__title {
+  color: black;
+  font-family: "Black Han Sans", sans-serif;
 }
